@@ -1,0 +1,17 @@
+n=int(input("enter the no of teams:"))
+teams=[]
+for i in range(n):
+    a=input("enter the teams:")
+    teams.append(a)
+meet=int(input("enter the no of team meeting:"))
+match=[]
+for i in range (0,n-1):
+    for j in range(i+1,n):
+        for k in range(meet):
+            match.append([teams[i],teams[j]])
+            
+print("---------")
+index=1
+for i in match:
+    print("match {}.{}Vs{}".format(index, i[0], i[1]))
+    index = index+1
