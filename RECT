@@ -1,0 +1,20 @@
+class rect:
+    def get_info(self,a,b):
+        self.a=a
+        self.b=b
+    def area(self):
+        return self.a*self.b
+        
+
+nums=[]
+d=int(input("enter total num of rectangles"))
+for i in range(d):
+    R=rect()
+    a=int(input("Enter the length of rect:"))
+    b=int(input("Enter the breadth of rect:"))
+    R.get_info(a,b)
+    nums.append(R)
+index=1
+for i in nums:
+    print("The area of rect {}: is {}".format(index,i.area()))
+    index=index+1
