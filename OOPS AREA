@@ -1,0 +1,21 @@
+class rectangle:
+    def rect(self):
+        a=int(input("enter len of rect"))
+        b=int(input("Enter bred of rect"))
+        self.len=a
+        self.bred=b
+    def area(self):
+        print(self.len*self.bred)
+    def peri(self):
+        print(2*(self.len+self.bred))
+        
+        
+a=rectangle()
+b=rectangle()
+a.rect()
+a.area()
+a.peri()
+print("--------------------------")
+b.rect()
+b.area()
+b.peri()
