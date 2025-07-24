@@ -1,0 +1,8 @@
+import qrcode
+a=qrcode.QRCode()
+text_mg="https://github.com/manishshetty10/PYTHON-PROJECT"
+a.add_data(text_mg)
+a.make(fit=True)
+image=a.make_image(fill_color="black",back_color="white")
+image.save("manish.png")
+print("Saved sucessfully")
